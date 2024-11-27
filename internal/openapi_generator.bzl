@@ -1,6 +1,7 @@
 # Copyright 2019 OpenAPI-Generator-Bazel Contributors
 
 load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
+load("@rules_java//java/common:java_common.bzl", "java_common")
 
 def openapi_tools_generator_bazel_repositories(
         openapi_generator_cli_version = "6.5.0",
