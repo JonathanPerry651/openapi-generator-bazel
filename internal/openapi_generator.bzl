@@ -198,6 +198,7 @@ _openapi_generator = rule(
         ),
     },
     implementation = _impl,
+    toolchains = ["@bazel_tools//tools/jdk:toolchain_type"],
 )
 
 def openapi_generator(name, **kwargs):
