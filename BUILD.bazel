@@ -1,6 +1,6 @@
 # Copyright 2019 OpenAPI-Generator-Bazel Contributors
 
-load("@rules_pkg//:pkg.bzl", "pkg_deb", "pkg_tar")
+load("@rules_pkg//:pkg.bzl", "pkg_tar")
 
 package(default_visibility = ["//visibility:public"])
 

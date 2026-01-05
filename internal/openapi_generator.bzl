@@ -1,5 +1,7 @@
 # Copyright 2019 OpenAPI-Generator-Bazel Contributors
 
+load("@rules_java//java/common:java_info.bzl", "JavaInfo")
+
 def _comma_separated_pairs(pairs):
     return ",".join([
         "{}={}".format(k, v)
@@ -137,7 +139,7 @@ def _collect_jars(targets):
             runtime_jars = depset(transitive = [runtime_jars, target.scala.transitive_runtime_exports])
             found = True
         if hasattr(target, "JavaInfo"):
-            # see JavaSkylarkApiProvider.java,
+            # see JavaStarlarkApiProvider.java,
             # this is just the compile-time deps
             # this should be improved in bazel 0.1.5 to get outputs.ijar
             # compile_jars = depset(transitive = [compile_jars, [target.java.outputs.ijar]])
