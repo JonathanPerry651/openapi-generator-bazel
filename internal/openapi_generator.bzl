@@ -1,6 +1,6 @@
 # Copyright 2019 OpenAPI-Generator-Bazel Contributors
-
 load("@rules_java//java/common:java_info.bzl", "JavaInfo")
+load("@rules_java//java/common:java_common.bzl", "java_common")
 
 def _comma_separated_pairs(pairs):
     return ",".join([
