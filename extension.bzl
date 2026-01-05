@@ -1,4 +1,5 @@
 "modules extension to use with openapi-generator-bazel"
+
 load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 
 def _openapi_generator_impl(module_ctx):
@@ -26,4 +27,3 @@ openapi_gen = module_extension(
     implementation = _openapi_generator_impl,
     tag_classes = {"client": _cli},
 )
-

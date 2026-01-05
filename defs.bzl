@@ -6,4 +6,3 @@ load(
 )
 
 openapi_generator = _openapi_generator
-
