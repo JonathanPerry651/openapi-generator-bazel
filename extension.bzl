@@ -10,6 +10,7 @@ def _openapi_generator_impl(module_ctx):
                 artifact_sha256 = install.sha256,
                 artifact = "org.openapitools:openapi-generator-cli:" + install.version,
                 server_urls = install.server_urls,
+                visibility = ["//visibility:public"],
             )
 
 _cli = tag_class(attrs = {
